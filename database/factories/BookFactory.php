@@ -22,15 +22,13 @@ class BookFactory extends Factory
      */
     public function definition(): array
     {
-        $userIds = User::pluck('id')->toArray();
-
         return [
             'title' => fake()->sentence(5),
             'author' => fake()->name(),
             'publication_year' => now()->year - fake()->numberBetween(1, 100),
-            'status' => fake()->boolean(80) ? Arr::random(BookStatus::cases())->value : NULL,
+            'status' => fake()->boolean(80) ? Arr::random(BookStatus::cases())->value : null,
             'ranking' => fake()->boolean(85) ? fake()->numberBetween(3, 5) : fake()->numberBetween(1, 2), // 15% terrible books
-            'user_id' => fake()->randomElement($userIds),
+            'user_id' => null,
             'created_at' => now(),
             'updated_at' => now(),
         ];
