@@ -18,5 +18,11 @@ class UserSeeder extends Seeder
             'email' => 'dev+admin@soapbox.nl',
             'password' => Hash::make('dev+admin@soapbox.nl'),
         ]);
+
+        User::factory()->create([
+            'name' => 'Jos',
+            'email' => 'dev+jos@soapbox.nl',
+            'password' => Hash::make('dev+jos@soapbox.nl'),
+        ]);
     }
 }

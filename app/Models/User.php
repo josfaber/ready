@@ -52,4 +52,12 @@ class User extends Authenticatable implements FilamentUser
     {
         return str_ends_with($this->email, '@soapbox.nl') && $this->hasVerifiedEmail();
     }
+
+    /**
+     * The books that belong to the user.
+     */
+    public function books()
+    {
+        return $this->hasMany(Book::class);
+    }
 }
