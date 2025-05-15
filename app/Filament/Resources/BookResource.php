@@ -109,4 +109,14 @@ class BookResource extends Resource
             'edit' => Pages\EditBook::route('/{record}/edit'),
         ];
     }
+
+    public static function getModelLabel(): string
+    {
+        return 'Book';
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return 'Books';
+    }
 }
