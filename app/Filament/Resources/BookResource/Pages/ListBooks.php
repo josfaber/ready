@@ -10,6 +10,7 @@ use App\Filament\Resources\BookResource;
 use App\Models\Book;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 
 class ListBooks extends ListRecords
 {
