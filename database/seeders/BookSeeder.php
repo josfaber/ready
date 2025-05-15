@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Enums\BookStatus;
 use App\Models\Book;
 use App\Models\User;
 use App\Models\Genre;
@@ -23,5 +24,11 @@ class BookSeeder extends Seeder
         ])->each(function ($book) {
             $book->genres()->attach(Genre::inRandomOrder()->take(rand(1, 3))->pluck('id'));
         });
+
+        Book::factory()->create([
+            'title' => 'The Admin Repository',
+            'user_id' => fn () => 1,
+            'status' => BookStatus::HAS_READ,
+        ]);
     }
 }
