@@ -29,7 +29,7 @@
 
         @else
             <a
-                href="/admin"
+                href="/dashboard/login"
                 class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
             >
                 Log in
@@ -47,7 +47,8 @@
                 </div>
 
                 <h1 class="text-3xl lg:text-5xl font-light text-[#1b1b18] dark:text-[#EDEDEC]">Ready for <span class="font-extrabold">Read</span>y?</h1>
-                <p class="text-sm lg:text-base text-[#1b1b18] dark:text-[#EDEDEC]">Ready (<i>Ree-dee</i>) is the online memory for every text you&rsquo;ve ever read.</p>
+                <p class="text-sm lg:text-base text-[#1b1b18] dark:text-[#EDEDEC]">Ready (<i>Ree-dee</i>) is the online memory for every text you&rsquo;ve ever read.
+                    <br>We already hold <span class="font-bold">{{ $totalBooksCount }}</span> books in our database!</p>
         </main>
     </div>
 </body>
