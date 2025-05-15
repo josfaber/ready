@@ -6,4 +6,10 @@ return [
         'reading' => 'Reading',
         'want-to-read' => 'Want to Read',
     ],
+    'book-status-short' => [
+        'has-read' => 'Read',
+        'reading' => 'Reading',
+        'want-to-read' => 'Want',
+        'null' => '',
+    ],
 ];
