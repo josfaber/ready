@@ -44,4 +44,3 @@ class BookGrid extends Component
             ->icon('heroicon-o-pencil-square');
     }
 }
-}
